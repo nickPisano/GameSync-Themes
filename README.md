@@ -1,8 +1,12 @@
 # GameSync Themes
 
-A community gallery of color themes for **GameSync**, the desktop game-save
+A community gallery of color themes for
+[**GameSync**](https://github.com/nickPisano/GameSync), the desktop game-save
 backup & sync app. Browse the gallery below, grab a theme's JSON, and paste it
 into GameSync to restyle the whole app.
+
+> Looking for the app itself? It lives at
+> [github.com/nickPisano/GameSync](https://github.com/nickPisano/GameSync).
 
 Every theme here is validated in CI and checked for strong text-on-background
 contrast, so they stay readable on real displays.
