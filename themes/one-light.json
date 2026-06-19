@@ -1,0 +1,16 @@
+{
+  "name": "One Light",
+  "colors": {
+    "bg": "#fafafa",
+    "panel": "#f0f0f0",
+    "panel-2": "#e5e5e6",
+    "border": "#d4d4d6",
+    "text": "#383a42",
+    "muted": "#6a6f7a",
+    "accent": "#4078f2",
+    "accent-hover": "#2f66e0",
+    "ok": "#50a14f",
+    "err": "#e45649",
+    "warn": "#c18401"
+  }
+}

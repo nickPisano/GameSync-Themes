@@ -1,0 +1,16 @@
+{
+  "name": "Nord Light",
+  "colors": {
+    "bg": "#eceff4",
+    "panel": "#e5e9f0",
+    "panel-2": "#d8dee9",
+    "border": "#c2cad6",
+    "text": "#2e3440",
+    "muted": "#4c566a",
+    "accent": "#5e81ac",
+    "accent-hover": "#4c6f99",
+    "ok": "#4f7a3a",
+    "err": "#a3424b",
+    "warn": "#97712b"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Gruvbox Light",
+  "colors": {
+    "bg": "#fbf1c7",
+    "panel": "#f2e5bc",
+    "panel-2": "#ebdbb2",
+    "border": "#d5c4a1",
+    "text": "#3c3836",
+    "muted": "#6f6357",
+    "accent": "#af3a03",
+    "accent-hover": "#9a3203",
+    "ok": "#79740e",
+    "err": "#9d0006",
+    "warn": "#b57614"
+  }
+}

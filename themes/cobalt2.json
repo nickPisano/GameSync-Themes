@@ -1,0 +1,16 @@
+{
+  "name": "Cobalt2",
+  "colors": {
+    "bg": "#193549",
+    "panel": "#1e4258",
+    "panel-2": "#245069",
+    "border": "#2d6188",
+    "text": "#ffffff",
+    "muted": "#9fb6c9",
+    "accent": "#ffc600",
+    "accent-hover": "#e6b200",
+    "ok": "#3ad900",
+    "err": "#ff628c",
+    "warn": "#ff9d00"
+  }
+}

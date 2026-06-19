@@ -1,0 +1,16 @@
+{
+  "name": "Rosé Pine Dawn",
+  "colors": {
+    "bg": "#faf4ed",
+    "panel": "#fffaf3",
+    "panel-2": "#f2e9e1",
+    "border": "#dfdad9",
+    "text": "#575279",
+    "muted": "#6e6a8a",
+    "accent": "#907aa9",
+    "accent-hover": "#7c6896",
+    "ok": "#56949f",
+    "err": "#b4637a",
+    "warn": "#ea9d34"
+  }
+}

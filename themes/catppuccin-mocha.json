@@ -1,0 +1,16 @@
+{
+  "name": "Catppuccin Mocha",
+  "colors": {
+    "bg": "#1e1e2e",
+    "panel": "#28283d",
+    "panel-2": "#313244",
+    "border": "#45475a",
+    "text": "#cdd6f4",
+    "muted": "#9399b2",
+    "accent": "#cba6f7",
+    "accent-hover": "#b48ee9",
+    "ok": "#a6e3a1",
+    "err": "#f38ba8",
+    "warn": "#f9e2af"
+  }
+}

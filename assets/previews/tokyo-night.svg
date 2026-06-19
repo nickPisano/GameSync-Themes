@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="190" viewBox="0 0 340 190" role="img" aria-label="Tokyo Night theme preview">
+  <title>Tokyo Night theme preview</title>
+  <rect x="0.5" y="0.5" width="339" height="189" rx="14" fill="#1a1b26" stroke="#2f334d"/>
+  <!-- window controls -->
+  <circle cx="22" cy="24" r="5" fill="#f7768e"/>
+  <circle cx="40" cy="24" r="5" fill="#e0af68"/>
+  <circle cx="58" cy="24" r="5" fill="#9ece6a"/>
+  <text x="78" y="28" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#c0caf5">Tokyo Night</text>
+  <!-- sidebar -->
+  <rect x="16" y="44" width="104" height="130" rx="9" fill="#1f2335" stroke="#2f334d"/>
+  <rect x="24" y="56" width="88" height="20" rx="6" fill="#7aa2f7"/>
+  <text x="33" y="70" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#ffffff">Library</text>
+  <text x="33" y="96" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#8088b3">Saves</text>
+  <text x="33" y="116" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#8088b3">Cloud</text>
+  <text x="33" y="136" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#8088b3">History</text>
+  <text x="33" y="156" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#8088b3">Settings</text>
+  <!-- main panel -->
+  <rect x="128" y="44" width="196" height="130" rx="9" fill="#24283b" stroke="#2f334d"/>
+  <text x="142" y="70" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#c0caf5">All saves synced</text>
+  <text x="142" y="90" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#8088b3">Last backup · 2m ago</text>
+  <text x="142" y="106" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#8088b3">12 slots · 1.2 GB</text>
+  <line x1="142" y1="118" x2="310" y2="118" stroke="#2f334d"/>
+  <rect x="142" y="130" width="84" height="26" rx="7" fill="#7aa2f7"/>
+  <text x="184" y="147" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Sync now</text>
+  <circle cx="250" cy="143" r="5" fill="#9ece6a"/>
+  <circle cx="272" cy="143" r="5" fill="#e0af68"/>
+  <circle cx="294" cy="143" r="5" fill="#f7768e"/>
+</svg>

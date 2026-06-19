@@ -1,11 +1,32 @@
 {
   "themes": [
     {
-      "id": "daylight",
-      "name": "Daylight",
-      "file": "daylight.json",
-      "accent": "#2563eb",
-      "bg": "#ffffff"
+      "id": "ayu-light",
+      "name": "Ayu Light",
+      "file": "ayu-light.json",
+      "accent": "#d9680a",
+      "bg": "#fcfcfc"
+    },
+    {
+      "id": "catppuccin-latte",
+      "name": "Catppuccin Latte",
+      "file": "catppuccin-latte.json",
+      "accent": "#8839ef",
+      "bg": "#eff1f5"
+    },
+    {
+      "id": "catppuccin-mocha",
+      "name": "Catppuccin Mocha",
+      "file": "catppuccin-mocha.json",
+      "accent": "#cba6f7",
+      "bg": "#1e1e2e"
+    },
+    {
+      "id": "cobalt2",
+      "name": "Cobalt2",
+      "file": "cobalt2.json",
+      "accent": "#ffc600",
+      "bg": "#193549"
     },
     {
       "id": "dracula-night",
@@ -22,11 +43,46 @@
       "bg": "#1e2326"
     },
     {
+      "id": "gruvbox-dark",
+      "name": "Gruvbox Dark",
+      "file": "gruvbox-dark.json",
+      "accent": "#fe8019",
+      "bg": "#282828"
+    },
+    {
+      "id": "gruvbox-light",
+      "name": "Gruvbox Light",
+      "file": "gruvbox-light.json",
+      "accent": "#af3a03",
+      "bg": "#fbf1c7"
+    },
+    {
       "id": "nord-aurora",
       "name": "Nord Aurora",
       "file": "nord-aurora.json",
       "accent": "#88c0d0",
       "bg": "#2e3440"
+    },
+    {
+      "id": "nord-light",
+      "name": "Nord Light",
+      "file": "nord-light.json",
+      "accent": "#5e81ac",
+      "bg": "#eceff4"
+    },
+    {
+      "id": "one-light",
+      "name": "One Light",
+      "file": "one-light.json",
+      "accent": "#4078f2",
+      "bg": "#fafafa"
+    },
+    {
+      "id": "rose-pine-dawn",
+      "name": "Rosé Pine Dawn",
+      "file": "rose-pine-dawn.json",
+      "accent": "#907aa9",
+      "bg": "#faf4ed"
     },
     {
       "id": "sakura-light",
@@ -55,6 +111,13 @@
       "file": "solarized-light.json",
       "accent": "#268bd2",
       "bg": "#fdf6e3"
+    },
+    {
+      "id": "tokyo-night",
+      "name": "Tokyo Night",
+      "file": "tokyo-night.json",
+      "accent": "#7aa2f7",
+      "bg": "#1a1b26"
     }
   ]
 }

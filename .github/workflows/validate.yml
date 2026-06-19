@@ -23,3 +23,6 @@ jobs:
 
       - name: Check theme previews are up to date
         run: node scripts/generate-previews.mjs --check
+
+      - name: Check README gallery is up to date
+        run: node scripts/generate-gallery.mjs --check

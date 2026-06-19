@@ -1,0 +1,16 @@
+{
+  "name": "Ayu Light",
+  "colors": {
+    "bg": "#fcfcfc",
+    "panel": "#f3f4f5",
+    "panel-2": "#e7e8e9",
+    "border": "#d9dadb",
+    "text": "#5c6166",
+    "muted": "#6b7075",
+    "accent": "#d9680a",
+    "accent-hover": "#c25d08",
+    "ok": "#6a9b00",
+    "err": "#e5183c",
+    "warn": "#f2ae49"
+  }
+}

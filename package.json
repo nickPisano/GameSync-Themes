@@ -9,7 +9,9 @@
     "validate": "node scripts/validate.mjs",
     "index": "node scripts/generate-index.mjs",
     "previews": "node scripts/generate-previews.mjs",
-    "check": "node scripts/validate.mjs && node scripts/generate-index.mjs --check && node scripts/generate-previews.mjs --check"
+    "gallery": "node scripts/generate-gallery.mjs",
+    "build": "node scripts/generate-index.mjs && node scripts/generate-previews.mjs && node scripts/generate-gallery.mjs",
+    "check": "node scripts/validate.mjs && node scripts/generate-index.mjs --check && node scripts/generate-previews.mjs --check && node scripts/generate-gallery.mjs --check"
   },
   "engines": {
     "node": ">=18"
