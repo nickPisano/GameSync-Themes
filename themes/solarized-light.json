@@ -1,0 +1,16 @@
+{
+  "name": "Solarized Light",
+  "colors": {
+    "bg": "#fdf6e3",
+    "panel": "#eee8d5",
+    "panel-2": "#e3dcc4",
+    "border": "#d3cbb0",
+    "text": "#073642",
+    "muted": "#586e75",
+    "accent": "#268bd2",
+    "accent-hover": "#1d6fa5",
+    "ok": "#6f7d00",
+    "err": "#dc322f",
+    "warn": "#9a7400"
+  }
+}

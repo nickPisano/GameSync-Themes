@@ -1,0 +1,16 @@
+{
+  "name": "Sakura Light",
+  "colors": {
+    "bg": "#fff5f7",
+    "panel": "#ffe9ee",
+    "panel-2": "#ffdde4",
+    "border": "#f3c6d0",
+    "text": "#2b1c22",
+    "muted": "#8a5d68",
+    "accent": "#d6336c",
+    "accent-hover": "#b02356",
+    "ok": "#2f9e44",
+    "err": "#e03131",
+    "warn": "#d9480f"
+  }
+}

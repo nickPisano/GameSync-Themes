@@ -1,0 +1,16 @@
+{
+  "name": "Nord Aurora",
+  "colors": {
+    "bg": "#2e3440",
+    "panel": "#3b4252",
+    "panel-2": "#434c5e",
+    "border": "#4c566a",
+    "text": "#eceff4",
+    "muted": "#a7b1c2",
+    "accent": "#88c0d0",
+    "accent-hover": "#8fbcbb",
+    "ok": "#a3be8c",
+    "err": "#bf616a",
+    "warn": "#ebcb8b"
+  }
+}

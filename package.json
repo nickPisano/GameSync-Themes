@@ -1,0 +1,16 @@
+{
+  "name": "gamesync-themes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Community gallery of color themes for GameSync.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "index": "node scripts/generate-index.mjs",
+    "check": "node scripts/validate.mjs && node scripts/generate-index.mjs --check"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

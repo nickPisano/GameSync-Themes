@@ -1,0 +1,60 @@
+{
+  "themes": [
+    {
+      "id": "daylight",
+      "name": "Daylight",
+      "file": "daylight.json",
+      "accent": "#2563eb",
+      "bg": "#ffffff"
+    },
+    {
+      "id": "dracula-night",
+      "name": "Dracula Night",
+      "file": "dracula-night.json",
+      "accent": "#bd93f9",
+      "bg": "#282a36"
+    },
+    {
+      "id": "everforest-dark",
+      "name": "Everforest Dark",
+      "file": "everforest-dark.json",
+      "accent": "#a7c080",
+      "bg": "#1e2326"
+    },
+    {
+      "id": "midnight-blue",
+      "name": "Midnight Blue",
+      "file": "midnight-blue.json",
+      "accent": "#4f8cff",
+      "bg": "#0f1216"
+    },
+    {
+      "id": "nord-aurora",
+      "name": "Nord Aurora",
+      "file": "nord-aurora.json",
+      "accent": "#88c0d0",
+      "bg": "#2e3440"
+    },
+    {
+      "id": "sakura-light",
+      "name": "Sakura Light",
+      "file": "sakura-light.json",
+      "accent": "#d6336c",
+      "bg": "#fff5f7"
+    },
+    {
+      "id": "solarized-dark",
+      "name": "Solarized Dark",
+      "file": "solarized-dark.json",
+      "accent": "#268bd2",
+      "bg": "#002b36"
+    },
+    {
+      "id": "solarized-light",
+      "name": "Solarized Light",
+      "file": "solarized-light.json",
+      "accent": "#268bd2",
+      "bg": "#fdf6e3"
+    }
+  ]
+}

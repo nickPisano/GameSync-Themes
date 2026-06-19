@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/gamesync/themes/schema/theme.schema.json",
+  "title": "GameSync Theme",
+  "description": "A single color theme for the GameSync desktop app.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "colors"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Human-readable theme name shown in GameSync.",
+      "minLength": 1,
+      "maxLength": 40
+    },
+    "colors": {
+      "type": "object",
+      "description": "Theme color roles. All values are #rrggbb hex.",
+      "additionalProperties": false,
+      "required": ["bg", "panel", "border", "text", "muted", "accent"],
+      "properties": {
+        "bg": { "$ref": "#/$defs/hex", "description": "Base background (darkest layer)." },
+        "panel": { "$ref": "#/$defs/hex", "description": "Panel / surface background." },
+        "panel-2": { "$ref": "#/$defs/hex", "description": "Raised panel background. Defaults to panel." },
+        "border": { "$ref": "#/$defs/hex", "description": "Borders and dividers." },
+        "text": { "$ref": "#/$defs/hex", "description": "Primary foreground text." },
+        "muted": { "$ref": "#/$defs/hex", "description": "Secondary / muted foreground text." },
+        "accent": { "$ref": "#/$defs/hex", "description": "Interactive / brand color." },
+        "accent-hover": { "$ref": "#/$defs/hex", "description": "Accent hover state. Defaults to accent." },
+        "ok": { "$ref": "#/$defs/hex", "description": "Success status color." },
+        "err": { "$ref": "#/$defs/hex", "description": "Error status color." },
+        "warn": { "$ref": "#/$defs/hex", "description": "Warning status color." }
+      }
+    }
+  },
+  "$defs": {
+    "hex": {
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}$"
+    }
+  }
+}
