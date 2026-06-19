@@ -20,3 +20,6 @@ jobs:
 
       - name: Check index.json is up to date
         run: node scripts/generate-index.mjs --check
+
+      - name: Check theme previews are up to date
+        run: node scripts/generate-previews.mjs --check

@@ -29,27 +29,27 @@ screen.
 
 ## Gallery
 
-Swatches show each theme's **background** and **accent** color.
+Each preview is a mock GameSync window rendered in that theme — showing the
+background layers, text, accent button, and `ok`/`warn`/`err` status colors.
+Click a preview to open its `.json`.
 
 ### Dark
 
-| Theme | Background | Accent |
-|---|---|---|
-| [Midnight Blue](themes/midnight-blue.json) | ![bg](https://img.shields.io/badge/%230f1216-0f1216?style=flat-square) | ![accent](https://img.shields.io/badge/%234f8cff-4f8cff?style=flat-square) |
-| [Nord Aurora](themes/nord-aurora.json) | ![bg](https://img.shields.io/badge/%232e3440-2e3440?style=flat-square) | ![accent](https://img.shields.io/badge/%2388c0d0-88c0d0?style=flat-square) |
-| [Dracula Night](themes/dracula-night.json) | ![bg](https://img.shields.io/badge/%23282a36-282a36?style=flat-square) | ![accent](https://img.shields.io/badge/%23bd93f9-bd93f9?style=flat-square) |
-| [Everforest Dark](themes/everforest-dark.json) | ![bg](https://img.shields.io/badge/%231e2326-1e2326?style=flat-square) | ![accent](https://img.shields.io/badge/%23a7c080-a7c080?style=flat-square) |
-| [Solarized Dark](themes/solarized-dark.json) | ![bg](https://img.shields.io/badge/%23002b36-002b36?style=flat-square) | ![accent](https://img.shields.io/badge/%23268bd2-268bd2?style=flat-square) |
+| | |
+|:--:|:--:|
+| [<img src="assets/previews/midnight-blue.svg" width="360" alt="Midnight Blue preview"><br>Midnight Blue](themes/midnight-blue.json) | [<img src="assets/previews/nord-aurora.svg" width="360" alt="Nord Aurora preview"><br>Nord Aurora](themes/nord-aurora.json) |
+| [<img src="assets/previews/dracula-night.svg" width="360" alt="Dracula Night preview"><br>Dracula Night](themes/dracula-night.json) | [<img src="assets/previews/everforest-dark.svg" width="360" alt="Everforest Dark preview"><br>Everforest Dark](themes/everforest-dark.json) |
+| [<img src="assets/previews/solarized-dark.svg" width="360" alt="Solarized Dark preview"><br>Solarized Dark](themes/solarized-dark.json) | |
 
 ### Light
 
-| Theme | Background | Accent |
-|---|---|---|
-| [Daylight](themes/daylight.json) | ![bg](https://img.shields.io/badge/%23ffffff-ffffff?style=flat-square) | ![accent](https://img.shields.io/badge/%232563eb-2563eb?style=flat-square) |
-| [Solarized Light](themes/solarized-light.json) | ![bg](https://img.shields.io/badge/%23fdf6e3-fdf6e3?style=flat-square) | ![accent](https://img.shields.io/badge/%23268bd2-268bd2?style=flat-square) |
-| [Sakura Light](themes/sakura-light.json) | ![bg](https://img.shields.io/badge/%23fff5f7-fff5f7?style=flat-square) | ![accent](https://img.shields.io/badge/%23d6336c-d6336c?style=flat-square) |
+| | |
+|:--:|:--:|
+| [<img src="assets/previews/daylight.svg" width="360" alt="Daylight preview"><br>Daylight](themes/daylight.json) | [<img src="assets/previews/solarized-light.svg" width="360" alt="Solarized Light preview"><br>Solarized Light](themes/solarized-light.json) |
+| [<img src="assets/previews/sakura-light.svg" width="360" alt="Sakura Light preview"><br>Sakura Light](themes/sakura-light.json) | |
 
-A machine-readable catalog of all themes lives in
+Previews are generated from the theme files by `npm run previews`. A
+machine-readable catalog of all themes lives in
 [`themes/index.json`](themes/index.json).
 
 ---
@@ -99,7 +99,8 @@ The formal definition lives in
 ```
 themes/             One .json per theme, plus a generated index.json catalog
 schema/             JSON Schema for a theme file
-scripts/            Node validator + index generator (zero dependencies)
+scripts/            Node validator, index + preview generators (zero deps)
+assets/previews/    Generated SVG preview for each theme (used by the gallery)
 .github/workflows/  CI that validates every theme on each PR
 ```
 
@@ -110,6 +111,7 @@ Requires Node.js 18+. No dependencies to install.
 ```bash
 node scripts/validate.mjs            # validate every theme in themes/
 node scripts/generate-index.mjs      # regenerate themes/index.json
+node scripts/generate-previews.mjs   # regenerate assets/previews/*.svg
 ```
 
 Or via npm:
@@ -117,7 +119,8 @@ Or via npm:
 ```bash
 npm run validate
 npm run index
-npm run check     # validate + verify index.json is up to date (what CI runs)
+npm run previews
+npm run check     # validate + verify index.json and previews are current (CI)
 ```
 
 ## Contributing

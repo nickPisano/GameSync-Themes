@@ -56,9 +56,12 @@ Thanks for adding to the GameSync theme gallery! Contributing a theme is just
    ```bash
    npm run validate     # checks JSON, required keys, hex format, name length
    npm run index        # regenerates themes/index.json
+   npm run previews     # regenerates assets/previews/<id>.svg for the gallery
    ```
 
-   Commit the regenerated `themes/index.json` along with your theme file.
+   Commit the regenerated `themes/index.json` and `assets/previews/<id>.svg`
+   along with your theme file. (`npm run check` runs all three checks at once,
+   the same as CI.)
 
 5. **Open a pull request.** CI re-runs the validator and confirms
    `themes/index.json` is up to date, so make sure both commands pass locally
@@ -82,8 +85,9 @@ Each pull request runs `scripts/validate.mjs`, which fails if any theme:
 - has an unknown key, or
 - has a `name` longer than 40 characters.
 
-It also runs `node scripts/generate-index.mjs --check` to ensure
-`themes/index.json` matches the themes on disk.
+It also runs `node scripts/generate-index.mjs --check` and
+`node scripts/generate-previews.mjs --check` to ensure `themes/index.json` and
+`assets/previews/` match the themes on disk.
 
 By contributing, you agree your theme is released under the project's
 [MIT License](LICENSE).
