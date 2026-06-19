@@ -22,13 +22,6 @@
       "bg": "#1e2326"
     },
     {
-      "id": "midnight-blue",
-      "name": "Midnight Blue",
-      "file": "midnight-blue.json",
-      "accent": "#4f8cff",
-      "bg": "#0f1216"
-    },
-    {
       "id": "nord-aurora",
       "name": "Nord Aurora",
       "file": "nord-aurora.json",
@@ -41,6 +34,13 @@
       "file": "sakura-light.json",
       "accent": "#d6336c",
       "bg": "#fff5f7"
+    },
+    {
+      "id": "sakura-night",
+      "name": "Sakura Night",
+      "file": "sakura-night.json",
+      "accent": "#ff7eb6",
+      "bg": "#1a1117"
     },
     {
       "id": "solarized-dark",

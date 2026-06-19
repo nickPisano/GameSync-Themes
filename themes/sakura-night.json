@@ -1,0 +1,16 @@
+{
+  "name": "Sakura Night",
+  "colors": {
+    "bg": "#1a1117",
+    "panel": "#241820",
+    "panel-2": "#2d2029",
+    "border": "#3b2b35",
+    "text": "#f5e4ec",
+    "muted": "#c79aa8",
+    "accent": "#ff7eb6",
+    "accent-hover": "#f368a3",
+    "ok": "#69db9c",
+    "err": "#ff7a85",
+    "warn": "#ffce6b"
+  }
+}

@@ -37,9 +37,9 @@ Click a preview to open its `.json`.
 
 | | |
 |:--:|:--:|
-| [<img src="assets/previews/midnight-blue.svg" width="360" alt="Midnight Blue preview"><br>Midnight Blue](themes/midnight-blue.json) | [<img src="assets/previews/nord-aurora.svg" width="360" alt="Nord Aurora preview"><br>Nord Aurora](themes/nord-aurora.json) |
-| [<img src="assets/previews/dracula-night.svg" width="360" alt="Dracula Night preview"><br>Dracula Night](themes/dracula-night.json) | [<img src="assets/previews/everforest-dark.svg" width="360" alt="Everforest Dark preview"><br>Everforest Dark](themes/everforest-dark.json) |
-| [<img src="assets/previews/solarized-dark.svg" width="360" alt="Solarized Dark preview"><br>Solarized Dark](themes/solarized-dark.json) | |
+| [<img src="assets/previews/nord-aurora.svg" width="360" alt="Nord Aurora preview"><br>Nord Aurora](themes/nord-aurora.json) | [<img src="assets/previews/dracula-night.svg" width="360" alt="Dracula Night preview"><br>Dracula Night](themes/dracula-night.json) |
+| [<img src="assets/previews/everforest-dark.svg" width="360" alt="Everforest Dark preview"><br>Everforest Dark](themes/everforest-dark.json) | [<img src="assets/previews/solarized-dark.svg" width="360" alt="Solarized Dark preview"><br>Solarized Dark](themes/solarized-dark.json) |
+| [<img src="assets/previews/sakura-night.svg" width="360" alt="Sakura Night preview"><br>Sakura Night](themes/sakura-night.json) | |
 
 ### Light
 
