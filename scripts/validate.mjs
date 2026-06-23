@@ -26,6 +26,56 @@ const colorRequired = colorSchema.required;
 const colorAllowed = Object.keys(colorSchema.properties);
 const hexPattern = new RegExp(schema.$defs.hex.pattern);
 
+const effectsSchema = schema.properties.effects;
+const effectsRequired = effectsSchema.required ?? [];
+const effectsAllowed = Object.keys(effectsSchema.properties);
+
+// Schema-driven check for a single value against its property definition.
+// Covers exactly the JSON Schema features the schema uses: the hex $ref,
+// enums, numbers with min/max, and arrays of those. Keeps the validator
+// dependency-free while still treating the schema as the source of truth.
+function checkField(path, value, spec, errors) {
+  if (spec.$ref === "#/$defs/hex") {
+    if (typeof value !== "string" || !hexPattern.test(value)) {
+      errors.push(`${path}: "${value}" is not a #rrggbb hex value`);
+    }
+    return;
+  }
+  if (spec.enum) {
+    if (!spec.enum.includes(value)) {
+      errors.push(`${path}: "${value}" is not one of: ${spec.enum.join(", ")}`);
+    }
+    return;
+  }
+  switch (spec.type) {
+    case "number":
+      if (typeof value !== "number" || Number.isNaN(value)) {
+        errors.push(`${path}: must be a number`);
+      } else if (spec.minimum !== undefined && value < spec.minimum) {
+        errors.push(`${path}: must be ≥ ${spec.minimum} (got ${value})`);
+      } else if (spec.maximum !== undefined && value > spec.maximum) {
+        errors.push(`${path}: must be ≤ ${spec.maximum} (got ${value})`);
+      }
+      break;
+    case "array":
+      if (!Array.isArray(value)) {
+        errors.push(`${path}: must be an array`);
+        break;
+      }
+      if (spec.minItems !== undefined && value.length < spec.minItems) {
+        errors.push(`${path}: needs at least ${spec.minItems} items`);
+      }
+      if (spec.maxItems !== undefined && value.length > spec.maxItems) {
+        errors.push(`${path}: allows at most ${spec.maxItems} items`);
+      }
+      value.forEach((v, i) => checkField(`${path}[${i}]`, v, spec.items, errors));
+      break;
+    case "string":
+      if (typeof value !== "string") errors.push(`${path}: must be a string`);
+      break;
+  }
+}
+
 let totalErrors = 0;
 let fileCount = 0;
 
@@ -94,6 +144,25 @@ for (const file of files) {
         if (typeof value !== "string" || !hexPattern.test(value)) {
           errors.push(`colors.${key}: "${value}" is not a #rrggbb hex value`);
         }
+      }
+    }
+  }
+
+  // effects (optional)
+  if ("effects" in data) {
+    const fx = data.effects;
+    if (typeof fx !== "object" || fx === null || Array.isArray(fx)) {
+      errors.push(`"effects" must be an object`);
+    } else {
+      for (const key of effectsRequired) {
+        if (!(key in fx)) errors.push(`effects: missing required key "${key}"`);
+      }
+      for (const [key, value] of Object.entries(fx)) {
+        if (!effectsAllowed.includes(key)) {
+          errors.push(`effects: unknown key "${key}"`);
+          continue;
+        }
+        checkField(`effects.${key}`, value, effectsSchema.properties[key], errors);
       }
     }
   }

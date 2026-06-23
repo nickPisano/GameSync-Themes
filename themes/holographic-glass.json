@@ -1,0 +1,24 @@
+{
+  "name": "Holographic Glass",
+  "colors": {
+    "bg": "#120f1f",
+    "panel": "#1d1733",
+    "panel-2": "#261d42",
+    "border": "#392c5c",
+    "text": "#f3ecff",
+    "muted": "#b6a6d8",
+    "accent": "#c77dff",
+    "accent-hover": "#b566f0",
+    "ok": "#5ad1c4",
+    "err": "#ff77a9",
+    "warn": "#ffd08a"
+  },
+  "effects": {
+    "style": "glass",
+    "gradient": ["#2a1a5c", "#3a1d6e", "#5c1d6b"],
+    "blur": 11,
+    "opacity": 0.58,
+    "highlight": "#e8d8ff",
+    "glow": "#c77dff"
+  }
+}

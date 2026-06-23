@@ -1,0 +1,23 @@
+{
+  "name": "Vintage Leather",
+  "colors": {
+    "bg": "#2a1d14",
+    "panel": "#3a2a1e",
+    "panel-2": "#46342a",
+    "border": "#5a4636",
+    "text": "#f3e6d2",
+    "muted": "#c2a888",
+    "accent": "#e0903a",
+    "accent-hover": "#cf7f2a",
+    "ok": "#8bbf5a",
+    "err": "#e0664f",
+    "warn": "#e6b25a"
+  },
+  "effects": {
+    "style": "skeuo",
+    "gradient": ["#3a281c", "#2a1d14", "#1f150d"],
+    "highlight": "#6e5236",
+    "shadow": "#120c07",
+    "blur": 0
+  }
+}

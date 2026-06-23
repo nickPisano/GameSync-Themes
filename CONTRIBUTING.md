@@ -39,6 +39,14 @@ Thanks for adding to the GameSync theme gallery! Contributing a theme is just
    - All color values must be `#rrggbb` hex (six digits, lowercase preferred).
    - `name` is at most **40 characters**.
 
+   **Optional — surface effects.** Add an `effects` block to give your theme a
+   richer look in the gallery preview (`"style"` of `glass`, `neo`, or
+   `skeuo`, plus optional `gradient`, `blur`, `opacity`, `highlight`, `shadow`,
+   and `glow`). It only affects the preview — the GameSync app renders the flat
+   `colors` and ignores `effects` — so it is entirely optional. See
+   [Surface effects](README.md#surface-effects-optional) for the full token
+   table.
+
 3. **Aim for accessible contrast.** Themes should be comfortable to read:
    - `text` on `bg` should meet **WCAG AA** for body text (contrast ratio
      **≥ 4.5:1**).
@@ -82,7 +90,9 @@ Each pull request runs `scripts/validate.mjs`, which fails if any theme:
   `accent`),
 - contains a color that is not a `#rrggbb` hex value,
 - has an unknown key, or
-- has a `name` longer than 40 characters.
+- has a `name` longer than 40 characters,
+- or has an `effects` block with an unknown `style`, an out-of-range number, or
+  a non-hex color.
 
 It also runs `--check` on the index, preview, and gallery generators to ensure
 `themes/index.json`, `assets/previews/`, and the `README.md` gallery all match

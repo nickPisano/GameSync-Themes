@@ -1,0 +1,22 @@
+{
+  "name": "Lavender Soft",
+  "colors": {
+    "bg": "#e9e7f4",
+    "panel": "#e9e7f4",
+    "panel-2": "#f1f0f9",
+    "border": "#d6d2e8",
+    "text": "#2f2a40",
+    "muted": "#5c5675",
+    "accent": "#6a49c8",
+    "accent-hover": "#5b3cb4",
+    "ok": "#2f8f60",
+    "err": "#cf4565",
+    "warn": "#9a6d14"
+  },
+  "effects": {
+    "style": "neo",
+    "highlight": "#ffffff",
+    "shadow": "#c5c0db",
+    "blur": 5
+  }
+}

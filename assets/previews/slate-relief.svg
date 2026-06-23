@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="190" viewBox="0 0 340 190" role="img" aria-label="Slate Relief theme preview">
+  <title>Slate Relief theme preview (neumorphism)</title>
+  <defs>
+    <filter id="raised" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="b"/>
+      <feOffset in="b" dx="5" dy="5" result="do"/>
+      <feFlood flood-color="#1b1e25" result="dc"/>
+      <feComposite in="dc" in2="do" operator="in" result="dark"/>
+      <feOffset in="b" dx="-5" dy="-5" result="lo"/>
+      <feFlood flood-color="#3a4150" result="lc"/>
+      <feComposite in="lc" in2="lo" operator="in" result="light"/>
+      <feMerge>
+        <feMergeNode in="dark"/>
+        <feMergeNode in="light"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="accentBtn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#72aaf2"/>
+      <stop offset="1" stop-color="#528cd8"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="339" height="189" rx="14" fill="#2b2f3a" stroke="#3a4150"/>
+  <!-- window controls -->
+  <circle cx="22" cy="24" r="5" fill="#f0738a"/>
+  <circle cx="40" cy="24" r="5" fill="#e0b15c"/>
+  <circle cx="58" cy="24" r="5" fill="#57c98a"/>
+  <text x="78" y="28" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#e6eaf2">Slate Relief</text>
+  <!-- sidebar (raised, same material as bg) -->
+  <rect x="16" y="46" width="104" height="126" rx="16" fill="#2b2f3a" filter="url(#raised)"/>
+  <rect x="24" y="56" width="88" height="22" rx="11" fill="url(#accentBtn)" filter="url(#raised)"/>
+  <text x="35" y="71" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#ffffff">Library</text>
+  <text x="33" y="97" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#9aa3b4">Saves</text>
+  <text x="33" y="117" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#9aa3b4">Cloud</text>
+  <text x="33" y="137" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#9aa3b4">History</text>
+  <text x="33" y="157" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#9aa3b4">Settings</text>
+  <!-- main panel (raised) -->
+  <rect x="130" y="46" width="194" height="126" rx="16" fill="#2b2f3a" filter="url(#raised)"/>
+  <text x="144" y="72" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#e6eaf2">All saves synced</text>
+  <text x="144" y="92" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#9aa3b4">Last backup · 2m ago</text>
+  <text x="144" y="108" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#9aa3b4">12 slots · 1.2 GB</text>
+  <rect x="144" y="130" width="86" height="27" rx="13" fill="url(#accentBtn)" filter="url(#raised)"/>
+  <text x="187" y="148" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Sync now</text>
+  <circle cx="252" cy="143" r="5" fill="#57c98a"/>
+  <circle cx="274" cy="143" r="5" fill="#e0b15c"/>
+  <circle cx="296" cy="143" r="5" fill="#f0738a"/>
+</svg>

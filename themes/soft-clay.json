@@ -1,0 +1,22 @@
+{
+  "name": "Soft Clay",
+  "colors": {
+    "bg": "#e6e7ee",
+    "panel": "#e6e7ee",
+    "panel-2": "#eef0f6",
+    "border": "#d2d4de",
+    "text": "#2b2e3a",
+    "muted": "#585d6b",
+    "accent": "#cf4f33",
+    "accent-hover": "#bb4329",
+    "ok": "#2f8f60",
+    "err": "#cf4040",
+    "warn": "#a6740f"
+  },
+  "effects": {
+    "style": "neo",
+    "highlight": "#ffffff",
+    "shadow": "#b9bcca",
+    "blur": 5
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Linen Notebook",
+  "colors": {
+    "bg": "#f3ecd9",
+    "panel": "#faf5e6",
+    "panel-2": "#fffdf5",
+    "border": "#ddd2b4",
+    "text": "#2f2a1e",
+    "muted": "#675f45",
+    "accent": "#b23a48",
+    "accent-hover": "#9c2f3c",
+    "ok": "#3f7d3a",
+    "err": "#b23a30",
+    "warn": "#946612"
+  },
+  "effects": {
+    "style": "skeuo",
+    "gradient": ["#f8f1de", "#f1ead4", "#e9e0c6"],
+    "highlight": "#ffffff",
+    "shadow": "#c9bd9a",
+    "blur": 0
+  }
+}

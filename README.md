@@ -43,20 +43,25 @@ Click a preview to open its `.json`.
 
 | | |
 |:--:|:--:|
-| [<img src="assets/previews/catppuccin-mocha.svg" width="360" alt="Catppuccin Mocha preview"><br>Catppuccin Mocha](themes/catppuccin-mocha.json) | [<img src="assets/previews/cobalt2.svg" width="360" alt="Cobalt2 preview"><br>Cobalt2](themes/cobalt2.json) |
-| [<img src="assets/previews/dracula-night.svg" width="360" alt="Dracula Night preview"><br>Dracula Night](themes/dracula-night.json) | [<img src="assets/previews/everforest-dark.svg" width="360" alt="Everforest Dark preview"><br>Everforest Dark](themes/everforest-dark.json) |
-| [<img src="assets/previews/gruvbox-dark.svg" width="360" alt="Gruvbox Dark preview"><br>Gruvbox Dark](themes/gruvbox-dark.json) | [<img src="assets/previews/nord-aurora.svg" width="360" alt="Nord Aurora preview"><br>Nord Aurora](themes/nord-aurora.json) |
-| [<img src="assets/previews/sakura-night.svg" width="360" alt="Sakura Night preview"><br>Sakura Night](themes/sakura-night.json) | [<img src="assets/previews/solarized-dark.svg" width="360" alt="Solarized Dark preview"><br>Solarized Dark](themes/solarized-dark.json) |
-| [<img src="assets/previews/tokyo-night.svg" width="360" alt="Tokyo Night preview"><br>Tokyo Night](themes/tokyo-night.json) |  |
+| [<img src="assets/previews/aurora-glass.svg" width="360" alt="Aurora Glass preview"><br>Aurora Glass](themes/aurora-glass.json) | [<img src="assets/previews/catppuccin-mocha.svg" width="360" alt="Catppuccin Mocha preview"><br>Catppuccin Mocha](themes/catppuccin-mocha.json) |
+| [<img src="assets/previews/cobalt2.svg" width="360" alt="Cobalt2 preview"><br>Cobalt2](themes/cobalt2.json) | [<img src="assets/previews/dracula-night.svg" width="360" alt="Dracula Night preview"><br>Dracula Night](themes/dracula-night.json) |
+| [<img src="assets/previews/everforest-dark.svg" width="360" alt="Everforest Dark preview"><br>Everforest Dark](themes/everforest-dark.json) | [<img src="assets/previews/gruvbox-dark.svg" width="360" alt="Gruvbox Dark preview"><br>Gruvbox Dark](themes/gruvbox-dark.json) |
+| [<img src="assets/previews/holographic-glass.svg" width="360" alt="Holographic Glass preview"><br>Holographic Glass](themes/holographic-glass.json) | [<img src="assets/previews/nord-aurora.svg" width="360" alt="Nord Aurora preview"><br>Nord Aurora](themes/nord-aurora.json) |
+| [<img src="assets/previews/sakura-night.svg" width="360" alt="Sakura Night preview"><br>Sakura Night](themes/sakura-night.json) | [<img src="assets/previews/slate-relief.svg" width="360" alt="Slate Relief preview"><br>Slate Relief](themes/slate-relief.json) |
+| [<img src="assets/previews/solarized-dark.svg" width="360" alt="Solarized Dark preview"><br>Solarized Dark](themes/solarized-dark.json) | [<img src="assets/previews/tokyo-night.svg" width="360" alt="Tokyo Night preview"><br>Tokyo Night](themes/tokyo-night.json) |
+| [<img src="assets/previews/vintage-leather.svg" width="360" alt="Vintage Leather preview"><br>Vintage Leather](themes/vintage-leather.json) |  |
 
 ### Light
 
 | | |
 |:--:|:--:|
-| [<img src="assets/previews/ayu-light.svg" width="360" alt="Ayu Light preview"><br>Ayu Light](themes/ayu-light.json) | [<img src="assets/previews/catppuccin-latte.svg" width="360" alt="Catppuccin Latte preview"><br>Catppuccin Latte](themes/catppuccin-latte.json) |
-| [<img src="assets/previews/gruvbox-light.svg" width="360" alt="Gruvbox Light preview"><br>Gruvbox Light](themes/gruvbox-light.json) | [<img src="assets/previews/nord-light.svg" width="360" alt="Nord Light preview"><br>Nord Light](themes/nord-light.json) |
-| [<img src="assets/previews/one-light.svg" width="360" alt="One Light preview"><br>One Light](themes/one-light.json) | [<img src="assets/previews/rose-pine-dawn.svg" width="360" alt="Rosé Pine Dawn preview"><br>Rosé Pine Dawn](themes/rose-pine-dawn.json) |
-| [<img src="assets/previews/sakura-light.svg" width="360" alt="Sakura Light preview"><br>Sakura Light](themes/sakura-light.json) | [<img src="assets/previews/solarized-light.svg" width="360" alt="Solarized Light preview"><br>Solarized Light](themes/solarized-light.json) |
+| [<img src="assets/previews/ayu-light.svg" width="360" alt="Ayu Light preview"><br>Ayu Light](themes/ayu-light.json) | [<img src="assets/previews/brushed-steel.svg" width="360" alt="Brushed Steel preview"><br>Brushed Steel](themes/brushed-steel.json) |
+| [<img src="assets/previews/catppuccin-latte.svg" width="360" alt="Catppuccin Latte preview"><br>Catppuccin Latte](themes/catppuccin-latte.json) | [<img src="assets/previews/frost-glass.svg" width="360" alt="Frost Glass preview"><br>Frost Glass](themes/frost-glass.json) |
+| [<img src="assets/previews/gruvbox-light.svg" width="360" alt="Gruvbox Light preview"><br>Gruvbox Light](themes/gruvbox-light.json) | [<img src="assets/previews/lavender-soft.svg" width="360" alt="Lavender Soft preview"><br>Lavender Soft](themes/lavender-soft.json) |
+| [<img src="assets/previews/linen-notebook.svg" width="360" alt="Linen Notebook preview"><br>Linen Notebook](themes/linen-notebook.json) | [<img src="assets/previews/mint-glass.svg" width="360" alt="Mint Glass preview"><br>Mint Glass](themes/mint-glass.json) |
+| [<img src="assets/previews/nord-light.svg" width="360" alt="Nord Light preview"><br>Nord Light](themes/nord-light.json) | [<img src="assets/previews/one-light.svg" width="360" alt="One Light preview"><br>One Light](themes/one-light.json) |
+| [<img src="assets/previews/rose-pine-dawn.svg" width="360" alt="Rosé Pine Dawn preview"><br>Rosé Pine Dawn](themes/rose-pine-dawn.json) | [<img src="assets/previews/sakura-light.svg" width="360" alt="Sakura Light preview"><br>Sakura Light](themes/sakura-light.json) |
+| [<img src="assets/previews/soft-clay.svg" width="360" alt="Soft Clay preview"><br>Soft Clay](themes/soft-clay.json) | [<img src="assets/previews/solarized-light.svg" width="360" alt="Solarized Light preview"><br>Solarized Light](themes/solarized-light.json) |
 
 <!-- GALLERY:END -->
 
@@ -100,6 +105,41 @@ All values are `#rrggbb` hex. The `name` is at most 40 characters.
 | `accent` | Interactive / brand color |
 | `accent-hover` | Accent hover state |
 | `ok` / `err` / `warn` | Success / error / warning status colors |
+
+### Surface effects (optional)
+
+A theme can add an `effects` block to opt into a richer surface style in its
+gallery preview — frosted **glass**, soft **neumorphism**, or material
+**skeuomorphism**:
+
+```json
+{
+  "name": "Aurora Glass",
+  "colors": { "…": "…" },
+  "effects": {
+    "style": "glass",
+    "gradient": ["#1b2a6b", "#13183a", "#2a1550"],
+    "blur": 10,
+    "opacity": 0.6,
+    "highlight": "#cfe0ff",
+    "glow": "#6ea8fe"
+  }
+}
+```
+
+| Key | Role |
+|---|---|
+| `style` | **Required** here: `glass`, `neo`, or `skeuo` (`flat` is the default look) |
+| `gradient` | 2–4 `#rrggbb` stops — backdrop (glass) or surface (skeuo), top → bottom |
+| `blur` | `0`–`40` — frost radius (glass) or shadow softness (neo) |
+| `opacity` | `0`–`1` — panel translucency (glass) |
+| `highlight` | Light edge — glass rim light, neo top-left glow, skeuo top gloss |
+| `shadow` | Dark edge — drop shadow / neo bottom-right shade / skeuo base |
+| `glow` | Optional accent glow around the primary button |
+
+> **`effects` only changes the gallery preview.** GameSync renders the flat
+> `colors`; it ignores `effects` until the app adds support for it, so every
+> theme stays fully usable with `colors` alone.
 
 The formal definition lives in
 [`schema/theme.schema.json`](schema/theme.schema.json).

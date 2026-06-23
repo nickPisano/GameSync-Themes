@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="190" viewBox="0 0 340 190" role="img" aria-label="Linen Notebook theme preview">
+  <title>Linen Notebook theme preview (skeuomorphism)</title>
+  <defs>
+    <linearGradient id="mat" x1="0" y1="0" x2="0" y2="1"><stop offset="0.000" stop-color="#f8f1de"/><stop offset="0.500" stop-color="#f1ead4"/><stop offset="1.000" stop-color="#e9e0c6"/></linearGradient>
+    <linearGradient id="panelMat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf7ea"/>
+      <stop offset="0.5" stop-color="#faf5e6"/>
+      <stop offset="1" stop-color="#dcd8ca"/>
+    </linearGradient>
+    <linearGradient id="btnMat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cb7983"/>
+      <stop offset="0.5" stop-color="#b23a48"/>
+      <stop offset="1" stop-color="#8e2e3a"/>
+    </linearGradient>
+    <filter id="drop" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="2" stdDeviation="2.2" flood-color="#c9bd9a" flood-opacity="0.55"/></filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/>
+    </filter>
+    <clipPath id="card"><rect x="0.5" y="0.5" width="339" height="189" rx="14"/></clipPath>
+  </defs>
+  <rect x="0.5" y="0.5" width="339" height="189" rx="14" fill="url(#mat)" stroke="#c7bda2"/>
+  <g clip-path="url(#card)"><rect x="0" y="0" width="340" height="190" filter="url(#grain)"/></g>
+  <!-- window controls (glossy) -->
+  <circle cx="22" cy="24" r="5" fill="#b23a30"/><circle cx="20.5" cy="22" r="1.8" fill="#ffffff" opacity="0.55"/>
+  <circle cx="40" cy="24" r="5" fill="#946612"/><circle cx="38.5" cy="22" r="1.8" fill="#ffffff" opacity="0.55"/>
+  <circle cx="58" cy="24" r="5" fill="#3f7d3a"/><circle cx="56.5" cy="22" r="1.8" fill="#ffffff" opacity="0.55"/>
+  <text x="78" y="29" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12" font-weight="700" fill="#ffffff" opacity="0.6">Linen Notebook</text>
+  <text x="78" y="28" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12" font-weight="700" fill="#2f2a1e">Linen Notebook</text>
+  <!-- sidebar (beveled material) -->
+  <rect x="16" y="44" width="104" height="130" rx="10" fill="url(#panelMat)" stroke="#bcb399" filter="url(#drop)"/>
+  <rect x="17.5" y="45.5" width="101" height="127" rx="9" fill="none" stroke="#ffffff" stroke-opacity="0.5"/>
+  <rect x="24" y="56" width="88" height="22" rx="7" fill="url(#btnMat)" stroke="#7d2932"/>
+  <rect x="25.5" y="57.5" width="85" height="9" rx="4.5" fill="#ffffff" opacity="0.2"/>
+  <text x="34" y="71" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="700" fill="#ffffff">Library</text>
+  <text x="33" y="97" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#675f45">Saves</text>
+  <text x="33" y="117" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#675f45">Cloud</text>
+  <text x="33" y="137" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#675f45">History</text>
+  <text x="33" y="157" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#675f45">Settings</text>
+  <!-- main panel (beveled material) -->
+  <rect x="128" y="44" width="196" height="130" rx="10" fill="url(#panelMat)" stroke="#bcb399" filter="url(#drop)"/>
+  <rect x="129.5" y="45.5" width="193" height="127" rx="9" fill="none" stroke="#ffffff" stroke-opacity="0.5"/>
+  <text x="142" y="71" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="14" font-weight="800" fill="#ffffff" opacity="0.55">All saves synced</text>
+  <text x="142" y="70" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="14" font-weight="800" fill="#2f2a1e">All saves synced</text>
+  <text x="142" y="90" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#675f45">Last backup · 2m ago</text>
+  <text x="142" y="106" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#675f45">12 slots · 1.2 GB</text>
+  <line x1="142" y1="118" x2="310" y2="118" stroke="#c7bda2"/>
+  <line x1="142" y1="119" x2="310" y2="119" stroke="#ffffff" stroke-opacity="0.4"/>
+  <rect x="142" y="130" width="86" height="27" rx="8" fill="url(#btnMat)" stroke="#7d2932" filter="url(#drop)"/>
+  <rect x="144" y="132" width="82" height="10" rx="5" fill="#ffffff" opacity="0.22"/>
+  <text x="185" y="148" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Sync now</text>
+  <circle cx="252" cy="143" r="5" fill="#3f7d3a"/><circle cx="250.5" cy="141" r="1.8" fill="#ffffff" opacity="0.55"/>
+  <circle cx="274" cy="143" r="5" fill="#946612"/><circle cx="272.5" cy="141" r="1.8" fill="#ffffff" opacity="0.55"/>
+  <circle cx="296" cy="143" r="5" fill="#b23a30"/><circle cx="294.5" cy="141" r="1.8" fill="#ffffff" opacity="0.55"/>
+</svg>

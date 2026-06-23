@@ -1,0 +1,23 @@
+{
+  "name": "Brushed Steel",
+  "colors": {
+    "bg": "#c9ccd2",
+    "panel": "#d9dce1",
+    "panel-2": "#e6e8ec",
+    "border": "#a9adb6",
+    "text": "#1c1f25",
+    "muted": "#4f5560",
+    "accent": "#285f97",
+    "accent-hover": "#21507f",
+    "ok": "#2c7a4e",
+    "err": "#b23329",
+    "warn": "#8f6710"
+  },
+  "effects": {
+    "style": "skeuo",
+    "gradient": ["#dfe2e7", "#cccfd6", "#b6bac2"],
+    "highlight": "#ffffff",
+    "shadow": "#6f7682",
+    "blur": 0
+  }
+}

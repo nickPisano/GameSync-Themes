@@ -1,11 +1,25 @@
 {
   "themes": [
     {
+      "id": "aurora-glass",
+      "name": "Aurora Glass",
+      "file": "aurora-glass.json",
+      "accent": "#6ea8fe",
+      "bg": "#0d1224"
+    },
+    {
       "id": "ayu-light",
       "name": "Ayu Light",
       "file": "ayu-light.json",
       "accent": "#d9680a",
       "bg": "#fcfcfc"
+    },
+    {
+      "id": "brushed-steel",
+      "name": "Brushed Steel",
+      "file": "brushed-steel.json",
+      "accent": "#285f97",
+      "bg": "#c9ccd2"
     },
     {
       "id": "catppuccin-latte",
@@ -43,6 +57,13 @@
       "bg": "#1e2326"
     },
     {
+      "id": "frost-glass",
+      "name": "Frost Glass",
+      "file": "frost-glass.json",
+      "accent": "#2f6fd0",
+      "bg": "#eef3fb"
+    },
+    {
       "id": "gruvbox-dark",
       "name": "Gruvbox Dark",
       "file": "gruvbox-dark.json",
@@ -55,6 +76,34 @@
       "file": "gruvbox-light.json",
       "accent": "#af3a03",
       "bg": "#fbf1c7"
+    },
+    {
+      "id": "holographic-glass",
+      "name": "Holographic Glass",
+      "file": "holographic-glass.json",
+      "accent": "#c77dff",
+      "bg": "#120f1f"
+    },
+    {
+      "id": "lavender-soft",
+      "name": "Lavender Soft",
+      "file": "lavender-soft.json",
+      "accent": "#6a49c8",
+      "bg": "#e9e7f4"
+    },
+    {
+      "id": "linen-notebook",
+      "name": "Linen Notebook",
+      "file": "linen-notebook.json",
+      "accent": "#b23a48",
+      "bg": "#f3ecd9"
+    },
+    {
+      "id": "mint-glass",
+      "name": "Mint Glass",
+      "file": "mint-glass.json",
+      "accent": "#0e8a62",
+      "bg": "#e9f6f0"
     },
     {
       "id": "nord-aurora",
@@ -99,6 +148,20 @@
       "bg": "#1a1117"
     },
     {
+      "id": "slate-relief",
+      "name": "Slate Relief",
+      "file": "slate-relief.json",
+      "accent": "#5b9cf0",
+      "bg": "#2b2f3a"
+    },
+    {
+      "id": "soft-clay",
+      "name": "Soft Clay",
+      "file": "soft-clay.json",
+      "accent": "#cf4f33",
+      "bg": "#e6e7ee"
+    },
+    {
       "id": "solarized-dark",
       "name": "Solarized Dark",
       "file": "solarized-dark.json",
@@ -118,6 +181,13 @@
       "file": "tokyo-night.json",
       "accent": "#7aa2f7",
       "bg": "#1a1b26"
+    },
+    {
+      "id": "vintage-leather",
+      "name": "Vintage Leather",
+      "file": "vintage-leather.json",
+      "accent": "#e0903a",
+      "bg": "#2a1d14"
     }
   ]
 }

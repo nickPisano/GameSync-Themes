@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="190" viewBox="0 0 340 190" role="img" aria-label="Holographic Glass theme preview">
+  <title>Holographic Glass theme preview (glass)</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0.000" stop-color="#2a1a5c"/><stop offset="0.500" stop-color="#3a1d6e"/><stop offset="1.000" stop-color="#5c1d6b"/></linearGradient>
+    <linearGradient id="frost" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8d8ff" stop-opacity="0.5"/>
+      <stop offset="0.55" stop-color="#1d1733" stop-opacity="0.58"/>
+      <stop offset="1" stop-color="#1d1733" stop-opacity="0.76"/>
+    </linearGradient>
+    <linearGradient id="glassBtn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d7a1ff"/>
+      <stop offset="1" stop-color="#c77dff"/>
+    </linearGradient>
+    <filter id="blobs" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="11"/></filter>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#c77dff" flood-opacity="0.85"/></filter>
+    <clipPath id="card"><rect x="0.5" y="0.5" width="339" height="189" rx="14"/></clipPath>
+  </defs>
+  <rect x="0.5" y="0.5" width="339" height="189" rx="14" fill="url(#bg)" stroke="#392c5c"/>
+  <g clip-path="url(#card)" filter="url(#blobs)">
+    <circle cx="300" cy="28" r="48" fill="#c77dff" opacity="0.5"/>
+    <circle cx="36" cy="172" r="52" fill="#5ad1c4" opacity="0.45"/>
+    <circle cx="250" cy="186" r="56" fill="#ff77a9" opacity="0.4"/>
+  </g>
+  <!-- window controls -->
+  <circle cx="22" cy="24" r="5" fill="#ff77a9"/>
+  <circle cx="40" cy="24" r="5" fill="#ffd08a"/>
+  <circle cx="58" cy="24" r="5" fill="#5ad1c4"/>
+  <text x="78" y="28" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#f3ecff">Holographic Glass</text>
+  <!-- sidebar (frosted) -->
+  <rect x="16" y="44" width="104" height="130" rx="11" fill="url(#frost)" stroke="#e8d8ff" stroke-opacity="0.6"/>
+  <rect x="24" y="56" width="88" height="20" rx="7" fill="url(#glassBtn)" stroke="#e8d8ff" stroke-opacity="0.75"/>
+  <text x="33" y="70" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#ffffff">Library</text>
+  <text x="33" y="96" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#b6a6d8">Saves</text>
+  <text x="33" y="116" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#b6a6d8">Cloud</text>
+  <text x="33" y="136" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#b6a6d8">History</text>
+  <text x="33" y="156" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#b6a6d8">Settings</text>
+  <!-- main panel (frosted) -->
+  <rect x="128" y="44" width="196" height="130" rx="11" fill="url(#frost)" stroke="#e8d8ff" stroke-opacity="0.6"/>
+  <text x="142" y="70" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#f3ecff">All saves synced</text>
+  <text x="142" y="90" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#b6a6d8">Last backup · 2m ago</text>
+  <text x="142" y="106" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#b6a6d8">12 slots · 1.2 GB</text>
+  <line x1="142" y1="118" x2="310" y2="118" stroke="#e8d8ff" stroke-opacity="0.35"/>
+  <rect x="142" y="130" width="84" height="26" rx="9" fill="url(#glassBtn)" stroke="#e8d8ff" stroke-opacity="0.8" filter="url(#glow)"/>
+  <text x="184" y="147" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Sync now</text>
+  <circle cx="250" cy="143" r="5" fill="#5ad1c4"/>
+  <circle cx="272" cy="143" r="5" fill="#ffd08a"/>
+  <circle cx="294" cy="143" r="5" fill="#ff77a9"/>
+</svg>

@@ -31,6 +31,50 @@
         "err": { "$ref": "#/$defs/hex", "description": "Error status color." },
         "warn": { "$ref": "#/$defs/hex", "description": "Warning status color." }
       }
+    },
+    "effects": {
+      "type": "object",
+      "description": "Optional surface-styling hints. They drive the look of the gallery preview (frosted glass, soft neumorphism, skeuomorphic material). The GameSync app renders the flat `colors`; it ignores this block until it adds support for it, so a theme is fully usable with `colors` alone.",
+      "additionalProperties": false,
+      "required": ["style"],
+      "properties": {
+        "style": {
+          "type": "string",
+          "description": "Which surface treatment to render.",
+          "enum": ["flat", "glass", "neo", "skeuo"]
+        },
+        "gradient": {
+          "type": "array",
+          "description": "Backdrop (glass) or surface (skeuo) gradient stops, top→bottom.",
+          "items": { "$ref": "#/$defs/hex" },
+          "minItems": 2,
+          "maxItems": 4
+        },
+        "blur": {
+          "type": "number",
+          "description": "Frost/softness radius in px. Glass backdrop blur, or neo/skeuo shadow softness.",
+          "minimum": 0,
+          "maximum": 40
+        },
+        "opacity": {
+          "type": "number",
+          "description": "Panel translucency for glass surfaces (0 = clear, 1 = solid).",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "highlight": {
+          "$ref": "#/$defs/hex",
+          "description": "Light edge: glass rim light, neo top-left shadow, skeuo top gloss."
+        },
+        "shadow": {
+          "$ref": "#/$defs/hex",
+          "description": "Dark edge: drop shadow, neo bottom-right shadow, skeuo base shade."
+        },
+        "glow": {
+          "$ref": "#/$defs/hex",
+          "description": "Optional accent glow around the primary button."
+        }
+      }
     }
   },
   "$defs": {

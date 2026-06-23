@@ -1,0 +1,22 @@
+{
+  "name": "Slate Relief",
+  "colors": {
+    "bg": "#2b2f3a",
+    "panel": "#2b2f3a",
+    "panel-2": "#333845",
+    "border": "#3a4150",
+    "text": "#e6eaf2",
+    "muted": "#9aa3b4",
+    "accent": "#5b9cf0",
+    "accent-hover": "#4a8ae0",
+    "ok": "#57c98a",
+    "err": "#f0738a",
+    "warn": "#e0b15c"
+  },
+  "effects": {
+    "style": "neo",
+    "highlight": "#3a4150",
+    "shadow": "#1b1e25",
+    "blur": 5
+  }
+}

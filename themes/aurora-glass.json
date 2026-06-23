@@ -1,0 +1,24 @@
+{
+  "name": "Aurora Glass",
+  "colors": {
+    "bg": "#0d1224",
+    "panel": "#161d3a",
+    "panel-2": "#1d2647",
+    "border": "#2a3566",
+    "text": "#eaf0ff",
+    "muted": "#9fb0d8",
+    "accent": "#6ea8fe",
+    "accent-hover": "#5793f0",
+    "ok": "#54d6a6",
+    "err": "#ff6b8a",
+    "warn": "#ffcb6b"
+  },
+  "effects": {
+    "style": "glass",
+    "gradient": ["#1b2a6b", "#13183a", "#2a1550"],
+    "blur": 10,
+    "opacity": 0.6,
+    "highlight": "#cfe0ff",
+    "glow": "#6ea8fe"
+  }
+}

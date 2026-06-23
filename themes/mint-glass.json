@@ -1,0 +1,24 @@
+{
+  "name": "Mint Glass",
+  "colors": {
+    "bg": "#e9f6f0",
+    "panel": "#f4fbf8",
+    "panel-2": "#ffffff",
+    "border": "#c4e0d4",
+    "text": "#16302a",
+    "muted": "#456258",
+    "accent": "#0e8a62",
+    "accent-hover": "#0b7a56",
+    "ok": "#159b73",
+    "err": "#d04f63",
+    "warn": "#a9760d"
+  },
+  "effects": {
+    "style": "glass",
+    "gradient": ["#f0fbf6", "#e2f3ec", "#d8f0ea"],
+    "blur": 9,
+    "opacity": 0.62,
+    "highlight": "#ffffff",
+    "glow": "#0e8a62"
+  }
+}

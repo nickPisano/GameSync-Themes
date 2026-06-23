@@ -1,0 +1,24 @@
+{
+  "name": "Frost Glass",
+  "colors": {
+    "bg": "#eef3fb",
+    "panel": "#f7faff",
+    "panel-2": "#ffffff",
+    "border": "#cdd9ec",
+    "text": "#1c2738",
+    "muted": "#51617a",
+    "accent": "#2f6fd0",
+    "accent-hover": "#2660bd",
+    "ok": "#2e9e6b",
+    "err": "#d64f63",
+    "warn": "#b7790f"
+  },
+  "effects": {
+    "style": "glass",
+    "gradient": ["#f4f8ff", "#e7eefb", "#dfe9fb"],
+    "blur": 9,
+    "opacity": 0.62,
+    "highlight": "#ffffff",
+    "glow": "#2f6fd0"
+  }
+}
