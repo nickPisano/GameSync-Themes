@@ -79,6 +79,33 @@ function gradStops(list) {
     .join("");
 }
 
+// Static soft-orb layer for themes whose effects request `bubbles`. Tinted by
+// bubbleColor (falling back to highlight, then accent — same order as the app).
+// Positions are fixed so previews stay deterministic for --check, and the layer
+// is injected behind the panels so it reads as a background effect (and shows
+// through translucent glass panels). Returns "" when bubbles are off, so themes
+// without bubbles render byte-for-byte as before.
+const BUBBLES = [
+  [40, 150, 14, 0.5], [300, 122, 12, 0.45], [168, 172, 16, 0.5],
+  [92, 62, 8, 0.4], [250, 40, 10, 0.45], [128, 112, 6, 0.4],
+  [210, 140, 9, 0.5], [60, 100, 7, 0.4], [292, 168, 11, 0.45],
+];
+function bubbleParts(on, color) {
+  if (!on) return { defs: "", layer: "" };
+  const defs =
+    `\n    <radialGradient id="bubble" cx="0.35" cy="0.32" r="0.7">` +
+    `<stop offset="0" stop-color="${color}" stop-opacity="0.85"/>` +
+    `<stop offset="0.6" stop-color="${color}" stop-opacity="0.22"/>` +
+    `<stop offset="0.85" stop-color="${color}" stop-opacity="0"/></radialGradient>` +
+    `\n    <clipPath id="bubbleclip"><rect x="0.5" y="0.5" width="339" height="189" rx="14"/></clipPath>`;
+  const orbs = BUBBLES.map(
+    ([cx, cy, r, o]) =>
+      `<circle cx="${cx}" cy="${cy}" r="${r}" fill="url(#bubble)" opacity="${o}"/>`
+  ).join("\n    ");
+  const layer = `\n  <g clip-path="url(#bubbleclip)">\n    ${orbs}\n  </g>`;
+  return { defs, layer };
+}
+
 // --- flat renderer (unchanged; used for themes without effects) -------------
 function flatSvg(theme) {
   const c = theme.colors;
@@ -140,6 +167,7 @@ function glassSvg(theme) {
   const op2 = Math.min(1, opacity + 0.18);
   const hl = fx.highlight ?? lighten(panel, 0.5);
   const glow = fx.glow ?? accent;
+  const { defs: bubDefs, layer: bubLayer } = bubbleParts(!!fx.bubbles, fx.bubbleColor ?? hl);
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="340" height="190" viewBox="0 0 340 190" role="img" aria-label="${name} theme preview">
   <title>${name} theme preview (glass)</title>
@@ -156,14 +184,14 @@ function glassSvg(theme) {
     </linearGradient>
     <filter id="blobs" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="${blur}"/></filter>
     <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="${glow}" flood-opacity="0.85"/></filter>
-    <clipPath id="card"><rect x="0.5" y="0.5" width="339" height="189" rx="14"/></clipPath>
+    <clipPath id="card"><rect x="0.5" y="0.5" width="339" height="189" rx="14"/></clipPath>${bubDefs}
   </defs>
   <rect x="0.5" y="0.5" width="339" height="189" rx="14" fill="url(#bg)" stroke="${c.border}"/>
   <g clip-path="url(#card)" filter="url(#blobs)">
     <circle cx="300" cy="28" r="48" fill="${accent}" opacity="0.5"/>
     <circle cx="36" cy="172" r="52" fill="${ok}" opacity="0.45"/>
     <circle cx="250" cy="186" r="56" fill="${err}" opacity="0.4"/>
-  </g>
+  </g>${bubLayer}
   <!-- window controls -->
   <circle cx="22" cy="24" r="5" fill="${err}"/>
   <circle cx="40" cy="24" r="5" fill="${warn}"/>
@@ -208,6 +236,10 @@ function neoSvg(theme) {
   const hl = fx.highlight ?? lighten(bg, 0.6);
   const sh = fx.shadow ?? darken(bg, 0.28);
   const d = blur; // shadow offset tracks softness
+  const { defs: bubDefs, layer: bubLayer } = bubbleParts(
+    !!fx.bubbles,
+    fx.bubbleColor ?? fx.highlight ?? accent
+  );
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="340" height="190" viewBox="0 0 340 190" role="img" aria-label="${name} theme preview">
   <title>${name} theme preview (neumorphism)</title>
@@ -229,9 +261,9 @@ function neoSvg(theme) {
     <linearGradient id="accentBtn" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="${lighten(accent, 0.14)}"/>
       <stop offset="1" stop-color="${darken(accent, 0.1)}"/>
-    </linearGradient>
+    </linearGradient>${bubDefs}
   </defs>
-  <rect x="0.5" y="0.5" width="339" height="189" rx="14" fill="${bg}" stroke="${c.border}"/>
+  <rect x="0.5" y="0.5" width="339" height="189" rx="14" fill="${bg}" stroke="${c.border}"/>${bubLayer}
   <!-- window controls -->
   <circle cx="22" cy="24" r="5" fill="${err}"/>
   <circle cx="40" cy="24" r="5" fill="${warn}"/>
@@ -275,6 +307,7 @@ function skeuoSvg(theme) {
   const sh = fx.shadow ?? darken(c.bg, 0.45);
   const panelTop = lighten(c.panel, 0.16);
   const panelBot = darken(c.panel, 0.12);
+  const { defs: bubDefs, layer: bubLayer } = bubbleParts(!!fx.bubbles, fx.bubbleColor ?? hl);
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="340" height="190" viewBox="0 0 340 190" role="img" aria-label="${name} theme preview">
   <title>${name} theme preview (skeuomorphism)</title>
@@ -295,10 +328,10 @@ function skeuoSvg(theme) {
       <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="2" stitchTiles="stitch" result="n"/>
       <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/>
     </filter>
-    <clipPath id="card"><rect x="0.5" y="0.5" width="339" height="189" rx="14"/></clipPath>
+    <clipPath id="card"><rect x="0.5" y="0.5" width="339" height="189" rx="14"/></clipPath>${bubDefs}
   </defs>
   <rect x="0.5" y="0.5" width="339" height="189" rx="14" fill="url(#mat)" stroke="${darken(c.border, 0.1)}"/>
-  <g clip-path="url(#card)"><rect x="0" y="0" width="340" height="190" filter="url(#grain)"/></g>
+  <g clip-path="url(#card)"><rect x="0" y="0" width="340" height="190" filter="url(#grain)"/></g>${bubLayer}
   <!-- window controls (glossy) -->
   <circle cx="22" cy="24" r="5" fill="${err}"/><circle cx="20.5" cy="22" r="1.8" fill="#ffffff" opacity="0.55"/>
   <circle cx="40" cy="24" r="5" fill="${warn}"/><circle cx="38.5" cy="22" r="1.8" fill="#ffffff" opacity="0.55"/>

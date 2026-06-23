@@ -14,12 +14,25 @@
     <filter id="blobs" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
     <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#0e8a62" flood-opacity="0.85"/></filter>
     <clipPath id="card"><rect x="0.5" y="0.5" width="339" height="189" rx="14"/></clipPath>
+    <radialGradient id="bubble" cx="0.35" cy="0.32" r="0.7"><stop offset="0" stop-color="#bff0dd" stop-opacity="0.85"/><stop offset="0.6" stop-color="#bff0dd" stop-opacity="0.22"/><stop offset="0.85" stop-color="#bff0dd" stop-opacity="0"/></radialGradient>
+    <clipPath id="bubbleclip"><rect x="0.5" y="0.5" width="339" height="189" rx="14"/></clipPath>
   </defs>
   <rect x="0.5" y="0.5" width="339" height="189" rx="14" fill="url(#bg)" stroke="#c4e0d4"/>
   <g clip-path="url(#card)" filter="url(#blobs)">
     <circle cx="300" cy="28" r="48" fill="#0e8a62" opacity="0.5"/>
     <circle cx="36" cy="172" r="52" fill="#159b73" opacity="0.45"/>
     <circle cx="250" cy="186" r="56" fill="#d04f63" opacity="0.4"/>
+  </g>
+  <g clip-path="url(#bubbleclip)">
+    <circle cx="40" cy="150" r="14" fill="url(#bubble)" opacity="0.5"/>
+    <circle cx="300" cy="122" r="12" fill="url(#bubble)" opacity="0.45"/>
+    <circle cx="168" cy="172" r="16" fill="url(#bubble)" opacity="0.5"/>
+    <circle cx="92" cy="62" r="8" fill="url(#bubble)" opacity="0.4"/>
+    <circle cx="250" cy="40" r="10" fill="url(#bubble)" opacity="0.45"/>
+    <circle cx="128" cy="112" r="6" fill="url(#bubble)" opacity="0.4"/>
+    <circle cx="210" cy="140" r="9" fill="url(#bubble)" opacity="0.5"/>
+    <circle cx="60" cy="100" r="7" fill="url(#bubble)" opacity="0.4"/>
+    <circle cx="292" cy="168" r="11" fill="url(#bubble)" opacity="0.45"/>
   </g>
   <!-- window controls -->
   <circle cx="22" cy="24" r="5" fill="#d04f63"/>

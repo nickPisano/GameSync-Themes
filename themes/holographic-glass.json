@@ -19,6 +19,8 @@
     "blur": 11,
     "opacity": 0.58,
     "highlight": "#e8d8ff",
-    "glow": "#c77dff"
+    "glow": "#c77dff",
+    "bubbles": true,
+    "bubbleColor": "#f3c2ff"
   }
 }

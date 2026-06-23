@@ -40,10 +40,11 @@ Thanks for adding to the GameSync theme gallery! Contributing a theme is just
    - `name` is at most **40 characters**.
 
    **Optional — surface effects.** Add an `effects` block to give your theme a
-   richer look in the gallery preview (`"style"` of `glass`, `neo`, or
-   `skeuo`, plus optional `gradient`, `blur`, `opacity`, `highlight`, `shadow`,
-   and `glow`). It only affects the preview — the GameSync app renders the flat
-   `colors` and ignores `effects` — so it is entirely optional. See
+   richer look (`"style"` of `glass`, `neo`, or `skeuo`, plus optional
+   `gradient`, `blur`, `opacity`, `highlight`, `shadow`, `glow`, and a drifting
+   `bubbles` / `bubbleColor` background layer). GameSync renders these effects
+   when a theme is imported, and the gallery preview shows them too — it is
+   entirely optional, and a theme without it renders from the flat `colors`. See
    [Surface effects](README.md#surface-effects-optional) for the full token
    table.
 

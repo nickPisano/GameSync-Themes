@@ -34,7 +34,7 @@
     },
     "effects": {
       "type": "object",
-      "description": "Optional surface-styling hints. They drive the look of the gallery preview (frosted glass, soft neumorphism, skeuomorphic material). The GameSync app renders the flat `colors`; it ignores this block until it adds support for it, so a theme is fully usable with `colors` alone.",
+      "description": "Optional surface-styling hints (frosted glass, soft neumorphism, skeuomorphic material, drifting bubbles). GameSync renders them when a theme is imported, and the gallery preview shows them too. A theme is fully usable with `colors` alone.",
       "additionalProperties": false,
       "required": ["style"],
       "properties": {
@@ -73,6 +73,14 @@
         "glow": {
           "$ref": "#/$defs/hex",
           "description": "Optional accent glow around the primary button."
+        },
+        "bubbles": {
+          "type": "boolean",
+          "description": "Float soft tinted bubbles up the background. Composes with any style."
+        },
+        "bubbleColor": {
+          "$ref": "#/$defs/hex",
+          "description": "Tint for the bubbles. Defaults to highlight, then accent."
         }
       }
     }

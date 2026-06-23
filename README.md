@@ -41,7 +41,7 @@ Click a preview to open its `.json`.
 
 ### With effects
 
-> These previews show each theme's glassmorphism, neumorphism, or skeuomorphism look. GameSync applies the flat `colors`; the `effects` styling is rendered here in the gallery (see [Surface effects](#surface-effects-optional)).
+> These previews show each theme's glassmorphism, neumorphism, or skeuomorphism look (and any drifting bubbles). GameSync renders these effects when the theme is imported; see [Surface effects](#surface-effects-optional).
 
 #### Glass
 
@@ -144,7 +144,9 @@ gallery preview — frosted **glass**, soft **neumorphism**, or material
     "blur": 10,
     "opacity": 0.6,
     "highlight": "#cfe0ff",
-    "glow": "#6ea8fe"
+    "glow": "#6ea8fe",
+    "bubbles": true,
+    "bubbleColor": "#bcd2ff"
   }
 }
 ```
@@ -158,10 +160,13 @@ gallery preview — frosted **glass**, soft **neumorphism**, or material
 | `highlight` | Light edge — glass rim light, neo top-left glow, skeuo top gloss |
 | `shadow` | Dark edge — drop shadow / neo bottom-right shade / skeuo base |
 | `glow` | Optional accent glow around the primary button |
+| `bubbles` | `true` to float soft tinted bubbles up the background (composes with any style) |
+| `bubbleColor` | `#rrggbb` tint for the bubbles (defaults to `highlight`, then `accent`) |
 
-> **`effects` only changes the gallery preview.** GameSync renders the flat
-> `colors`; it ignores `effects` until the app adds support for it, so every
-> theme stays fully usable with `colors` alone.
+> **`effects` is optional.** GameSync renders these effects when you import a
+> theme, and the gallery previews above show them too. A theme without an
+> `effects` block simply uses the flat `colors`, so `colors` alone is always
+> enough.
 
 The formal definition lives in
 [`schema/theme.schema.json`](schema/theme.schema.json).

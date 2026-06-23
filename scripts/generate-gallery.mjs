@@ -72,9 +72,9 @@ const styleGroups = [
 
 const note =
   "> These previews show each theme's glassmorphism, neumorphism, or " +
-  "skeuomorphism look. GameSync applies the flat `colors`; the `effects` " +
-  "styling is rendered here in the gallery (see " +
-  "[Surface effects](#surface-effects-optional)).";
+  "skeuomorphism look (and any drifting bubbles). GameSync renders these " +
+  "effects when the theme is imported; see " +
+  "[Surface effects](#surface-effects-optional).";
 
 let body = "";
 if (withFx.length) {

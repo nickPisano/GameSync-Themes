@@ -73,6 +73,9 @@ function checkField(path, value, spec, errors) {
     case "string":
       if (typeof value !== "string") errors.push(`${path}: must be a string`);
       break;
+    case "boolean":
+      if (typeof value !== "boolean") errors.push(`${path}: must be true or false`);
+      break;
   }
 }
 
