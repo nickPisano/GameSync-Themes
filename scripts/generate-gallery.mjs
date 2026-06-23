@@ -44,6 +44,7 @@ const themes = readdirSync(themesDir)
       id: f.replace(/\.json$/, ""),
       name: data.name,
       dark: luminance(data.colors.bg) < 0.5,
+      style: data.effects?.style ?? null,
     };
   });
 
@@ -60,9 +61,34 @@ function table(list) {
   return out;
 }
 
-const dark = themes.filter((t) => t.dark);
-const light = themes.filter((t) => !t.dark);
-const block = `${START}\n\n### Dark\n\n${table(dark)}\n### Light\n\n${table(light)}\n${END}`;
+const withFx = themes.filter((t) => t.style);
+const classic = themes.filter((t) => !t.style);
+
+const styleGroups = [
+  ["Glass", "glass"],
+  ["Neumorphism", "neo"],
+  ["Skeuomorphism", "skeuo"],
+];
+
+const note =
+  "> These previews show each theme's glassmorphism, neumorphism, or " +
+  "skeuomorphism look. GameSync applies the flat `colors`; the `effects` " +
+  "styling is rendered here in the gallery (see " +
+  "[Surface effects](#surface-effects-optional)).";
+
+let body = "";
+if (withFx.length) {
+  body += `### With effects\n\n${note}\n\n`;
+  for (const [label, key] of styleGroups) {
+    const list = withFx.filter((t) => t.style === key);
+    if (list.length) body += `#### ${label}\n\n${table(list)}\n`;
+  }
+}
+body += `### Without effects\n\n`;
+body += `#### Dark\n\n${table(classic.filter((t) => t.dark))}\n`;
+body += `#### Light\n\n${table(classic.filter((t) => !t.dark))}`;
+
+const block = `${START}\n\n${body}\n${END}`;
 
 const readme = readFileSync(readmePath, "utf8");
 const region = new RegExp(escapeRegExp(START) + "[\\s\\S]*?" + escapeRegExp(END));
@@ -80,11 +106,11 @@ if (checkOnly) {
     process.exit(1);
   }
   console.log(
-    `README gallery is up to date (${dark.length} dark, ${light.length} light).`
+    `README gallery is up to date (${withFx.length} with effects, ${classic.length} classic).`
   );
 } else {
   writeFileSync(readmePath, updated);
   console.log(
-    `Updated README gallery (${dark.length} dark, ${light.length} light).`
+    `Updated README gallery (${withFx.length} with effects, ${classic.length} classic).`
   );
 }
